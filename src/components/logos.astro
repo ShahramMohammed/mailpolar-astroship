@@ -1,18 +1,33 @@
 ---
 // @ts-ignore
 import { Icon } from "astro-icon/components";
+import { Picture } from "astro:assets";
+import zapierLogo from "assets/zapier-black.svg";
+import mailchimpLogo from "assets/mailchimp-black.svg";
+import klaviyoLogo from "assets/klaviyo-black.svg";
+import acLogo from "assets/activecampaign-black.svg";
 ---
 
 <div class="mt-24">
   <h2 class="text-center text-slate-500">Works with your technologies</h2>
-  <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
+  <div class="flex gap-x-8 gap-y-4 md:gap-20 lg:gap-28 items-center justify-center mt-6 flex-wrap">
 <!-- setting height to unset and width to 48 because the default
 v1 astro-icon sets them to 1em each -->
-    <Icon width=48 height=unset class="h-8 md:h-12" name="simple-icons:react" />
-    <Icon width=48 height=unset class="h-8 md:h-12" name="simple-icons:svelte" />
-    <Icon width=48 height=unset class="h-8 md:h-14" name="simple-icons:tailwindcss" />
-    <Icon width=48 height=unset class="h-8 md:h-16" name="simple-icons:alpinedotjs" />
-    <Icon width=48 height=unset class="h-8 md:h-12" name="simple-icons:vercel" />
-    <Icon width=48 height=unset class="h-8 md:h-12" name="simple-icons:astro" />
+    <Picture width=200 height=90 class="my-2 h-7 md:h-9"
+      src={klaviyoLogo}
+      alt="zapier-logo"
+    />
+    <Picture width=240 height=48 class="my-2 h-7 md:h-9"
+      src={mailchimpLogo}
+      alt="zapier-logo"
+    />
+    <Picture width=200 height=48 class="my-2 h-7 md:h-9"
+      src={zapierLogo}
+      alt="zapier-logo"
+    />
+    <Picture width=200   height=48 class="my-2 h-7 md:h-9"
+      src={acLogo}
+      alt="zapier-logo"
+    />
   </div>
 </div>
